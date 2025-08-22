@@ -263,7 +263,11 @@ if (toggle) {
         }
         */
         MouseClick, Left
-        sleep 300
+        Sleep 300
+        MouseMove, 1167, 477, 3
+        Sleep 300
+        MouseClick, Left
+        Sleep 300
         cycleCount++
     }
 }
@@ -525,3 +529,4 @@ res := Resolution
 IniWrite, %res%, %iniFilePath%, "Macro", "resolution"
 ManualGUIUpdate()
 return
+
